@@ -2,8 +2,7 @@
 # PROJECT 4 README <!-- omit in toc -->
 
 > The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
+
 
 - [Overview](#overview)
 - [MVP](#mvp)
@@ -30,8 +29,6 @@ _**I'd Watch that** an app that will allow people to read and right there own re
 <br>
 
 ## MVP
-
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 _The **I'd Watch That** MVP Should allow users to see a list of movie and search movies by title. Add movie that isn't there with review. Add reviews to movies in list _
 
@@ -92,7 +89,6 @@ _The **I'd Watch That** MVP Should allow users to see a list of movie and search
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
 [Component Tree Sample](https://drive.google.com/file/d/1sEiYCKDRi-als9GtKjBggdhit5_R-xuA/view?usp=sharing)
 
