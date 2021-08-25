@@ -128,7 +128,7 @@ src
 | auth                |    H     |     4 hrs      |     3 hrs     |     TBD     |
 | Debugging           |    H     |     4 hrs      |     1 hrs     |     TBD     |
 | Styling             |    H     |     3 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |    L     |                |               |             |
+| TOTAL               |    L     |     27 hrs     |               |             |
 
 
 
