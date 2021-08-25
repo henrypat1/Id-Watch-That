@@ -67,7 +67,7 @@ _The **Project Title** MVP Should allow users to see a list of movie and search 
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![Dummy Link](https://whimsical.com/RJiQwfx3EMXpbtvNwmwsEu)
 
 - Desktop Landing
 
@@ -121,12 +121,12 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| DB                  |    L     |     4 hrs      |     2 hrs     |    3 hrs    |
+| DB                  |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-|                     |          |     6 hrs      |     3 hrs     |     TBD     |
-|                     |          |                |               |             |
-|                     |          |                |               |             |
-|                     |          |                |               |             |
+| connect front end   |    H     |     6 hrs      |     3 hrs     |     TBD     |
+| testing             |    L     |     4 hrs      |     2 hrs     |    3 hrs    |
+| create Pages        |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| connecting   |    H     |     6 hrs      |     3 hrs     |     TBD     |
 | TOTAL               |          |                |               |             |
 
 
