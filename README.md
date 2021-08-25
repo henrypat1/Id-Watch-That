@@ -65,27 +65,8 @@ _The **I'd Watch That** MVP Should allow users to see a list of movie and search
 
 (https://whimsical.com/RJiQwfx3EMXpbtvNwmwsEu)
 
-- Desktop Landing
+- Desktop and phone
 
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
