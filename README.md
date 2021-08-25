@@ -24,7 +24,7 @@
 
 ## Overview
 
-_**Project Title** an app that will allow people to read and right there own reviews of movies._
+_**I'd Watch that** an app that will allow people to read and right there own reviews of movies._
 
 
 <br>
@@ -33,7 +33,7 @@ _**Project Title** an app that will allow people to read and right there own rev
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** MVP Should allow users to see a list of movie and search movies by title. Add movie that isn't there with review. Add reviews to movies in list _
+_The **I'd Watch That** MVP Should allow users to see a list of movie and search movies by title. Add movie that isn't there with review. Add reviews to movies in list _
 
 <br>
 
@@ -49,15 +49,15 @@ _The **Project Title** MVP Should allow users to see a list of movie and search 
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _I will be using react for the from end._ |
+|   React Router   | _routing the pages._ |
+|       axios      | _communicate to the back end._ |
+|  ruby on rails   | _create back end._ |
+|  Express Router  | _To create router handlers._ |
 
 <br>
 
@@ -65,7 +65,6 @@ _The **Project Title** MVP Should allow users to see a list of movie and search 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
 ![Dummy Link](https://whimsical.com/RJiQwfx3EMXpbtvNwmwsEu)
 
@@ -104,14 +103,19 @@ _The **Project Title** MVP Should allow users to see a list of movie and search 
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+|__ screens/
+      |__ movie.jsx
+      |__ review.jsx
+      |__ add mvie.jsx
+      |__ create review
 |__ components/
       |__ Header.jsx
+|__ layouts/
+      |__ Layout.jsx
 |__ services/
+      |__api-config.js
+      |__movie.js
+      |__review.js
 
 ```
 
@@ -122,12 +126,15 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | DB                  |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| connect front end   |    H     |     6 hrs      |     3 hrs     |     TBD     |
-| testing             |    L     |     4 hrs      |     2 hrs     |    3 hrs    |
-| create Pages        |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| connecting   |    H     |     6 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |                |               |             |
+| Create CRUD Actions |    H     |     4 hrs      |     1 hrs     |     TBD     |
+| connect front end   |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| testing             |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
+| create Pages        |    H     |     5 hrs      |     1 hrs     |     TBD     |
+| conecting pages     |    H     |     4 hrs      |     3 hrs     |     TBD     |
+| auth                |    H     |     4 hrs      |     3 hrs     |     TBD     |
+| Debugging           |    H     |     4 hrs      |     1 hrs     |     TBD     |
+| Styling             |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| TOTAL               |    L     |                |               |             |
 
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
