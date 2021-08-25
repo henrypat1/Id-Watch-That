@@ -63,7 +63,7 @@ _The **I'd Watch That** MVP Should allow users to see a list of movie and search
 #### Wireframes
 
 
-![Dummy Link](https://whimsical.com/RJiQwfx3EMXpbtvNwmwsEu)
+(https://whimsical.com/RJiQwfx3EMXpbtvNwmwsEu)
 
 - Desktop Landing
 
