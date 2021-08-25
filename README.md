@@ -1,4 +1,4 @@
-# movie-review-app
+# I'd Watch That
 # PROJECT 4 README <!-- omit in toc -->
 
 > The Project Planning section **should be completed** for your project pitch with instructors.
@@ -33,17 +33,17 @@ _**Project Title** an app that will allow people to read and right there own rev
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Project Title** MVP Should allow users to see a list of movie and search movies by title. Add movie that isn't there with review. Add reviews to movies in list _
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _show movies._
+- _Show the reviews for the movies._
+- _search a movie._
+- _create a review for the movie ._
+- _add a movie and a review for it._
 
 <br>
 
@@ -95,7 +95,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+[Component Tree Sample](https://drive.google.com/file/d/1sEiYCKDRi-als9GtKjBggdhit5_R-xuA/view?usp=sharing)
 
 #### Component Architecture
 
@@ -121,9 +121,14 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| DB                  |    L     |     4 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+|                     |          |     6 hrs      |     3 hrs     |     TBD     |
+|                     |          |                |               |             |
+|                     |          |                |               |             |
+|                     |          |                |               |             |
+| TOTAL               |          |                |               |             |
+
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
@@ -135,7 +140,7 @@ src
 
 > Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+[ERD Sample](https://drive.google.com/file/d/1UgfWbQSUmDoLqHmEfS29_Jiz_7RCOPlO/view?usp=sharing)
 <br>
 
 ***
@@ -143,6 +148,10 @@ src
 ## Post-MVP
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+
+- _add authorization._
+- _registration._
+
 
 ***
 
