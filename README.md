@@ -80,16 +80,20 @@ _The **I'd Watch That** MVP Should allow users to see a list of movie and search
 
 src
 |__ screens/
-      |__ movie.jsx
-      |__ review.jsx
-      |__ add mvie.jsx
-      |__ create review
+      |__ Movie.jsx
+      |__ AddMovie.jsx
+      |__ CreateReview.jsx
+      |__ SignIn.jsx
+      |__ SignUp.jsx
+      |__ MovieDetail.jsx
+      |__ UpdateMovie.jsx
 |__ components/
       |__ Header.jsx
+      |__ Review.jsx
 |__ layouts/
       |__ Layout.jsx
 |__ services/
-      |__api-config.js
+      |__api-Config.js
       |__movie.js
       |__review.js
 
@@ -102,14 +106,15 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | DB                  |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     4 hrs      |     1 hrs     |     TBD     |
-| connect front end   |    H     |     3 hrs      |     3 hrs     |     TBD     |
-| testing             |    H     |     3 hrs      |     2 hrs     |    3 hrs    |
-| create Pages        |    H     |     5 hrs      |     1 hrs     |     TBD     |
+| connect front end   |    H     |     4 hrs      |     3 hrs     |     TBD     |
+| testing             |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
+| create Pages        |    H     |     6 hrs      |     1 hrs     |     TBD     |
 | conecting pages     |    H     |     4 hrs      |     3 hrs     |     TBD     |
 | auth                |    H     |     4 hrs      |     3 hrs     |     TBD     |
 | Debugging           |    H     |     4 hrs      |     1 hrs     |     TBD     |
-| Styling             |    H     |     3 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |    L     |     27 hrs     |               |             |
+| CSS Styling         |    L     |     6 hrs      |     3 hrs     |     TBD     |
+| Deployment          |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| TOTAL               |          |     36 hrs     |               |             |
 
 
 
