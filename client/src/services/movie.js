@@ -10,12 +10,12 @@ export const getOneMovie = async (id) => {
   return resp.data;
 };
 
-export const postFood = async (movieData) => {
+export const postMovie = async (movieData) => {
   const resp = await api.post('/movies', { movie: movieData });
   return resp.data;
 };
 
-export const putFood = async (id, movieData) => {
+export const putMovie = async (id, movieData) => {
   const resp = await api.put(`/movies/${id}`, { movie: movieData });
   return resp.data;
 };

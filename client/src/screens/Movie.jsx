@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 
 export default function Movies(props) {
-  const { foods, handleDelete, currentUser } = props;
+  const { movie, handleDelete, currentUser } = props;
 
   return (
     <div>
       <h3>Movies</h3>
-      {foods.map((movie) => (
+      {movie.map((movie) => (
         <div key={movie.id}>
           <Link to={`/movies/${movie.id}`}>
-            <p>{food.name}</p>
+            <p>{movie.name}</p>
           </Link>
           {currentUser?.id === movie.user_id && (
             <div>

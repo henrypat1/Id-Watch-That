@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-export default function FoodCreate(props) {
+export default function CreateReview(props) {
   const [formData, setFormData] = useState({
     name: '',
   });
-  const { name } = formData;
+  const { header } = formData;
+  const { review } = formData;
   const { handleCreate } = props;
 
   const handleChange = (e) => {
@@ -22,10 +23,14 @@ export default function FoodCreate(props) {
         handleCreate(formData);
       }}
     >
-      <h3>Create Food</h3>
+      <h3>Add Review</h3>
       <label>
-        Name:
-        <input type='text' name='name' value={name} onChange={handleChange} />
+        Header:
+        <input type='text' name='header' value={header} onChange={handleChange} />
+      </label>
+      <label>
+        Review:
+        <input type='text' name='review' value={review} onChange={handleChange} />
       </label>
       <button>Submit</button>
     </form>

@@ -6,6 +6,9 @@ export default function AddMovie(props) {
   });
   const { name } = formData;
   const { year } = formData;
+  const { director } = formData;
+  const { poster } = formData;
+  const { plot } = formData;
   const { handleCreate } = props;
 
   const handleChange = (e) => {
@@ -30,6 +33,13 @@ export default function AddMovie(props) {
       </label>
       <label>
         <input type="text" name='year' value={year} onchange={handleChange} />
+      </label>
+      <label>
+        <input type="text" name='director' value={director} onchange={handleChange} />
+      </label><label>
+        <input type="img-url" name='poster' value={poster} onchange={handleChange} />
+      </label><label>
+        <input type="text" name='plot' value={plot} onchange={handleChange} />
       </label>
       <button>Submit</button>
     </form>

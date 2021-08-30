@@ -5,18 +5,18 @@ export default function UpdateMovie(props) {
   const [formData, setFormData] = useState({
     name: ''
   })
-  const {foods, handleUpdate} = props;
+  const {movies, handleUpdate} = props;
   const {id} = useParams();
 
   useEffect(()=> {
     const prefillFormData = () => {
-      const foodItem = foods.find((food)=> food.id === Number(id));
-      setFormData({ name: foodItem.name })
+      const movie = movies.find((food)=> movies.id === Number(id));
+      setFormData({ name: movie.name })
     }
-    if (foods.length) {
+    if (movies.length) {
       prefillFormData()
     }
-  }, [foods, id])
+  }, [movies, id])
 
   const handleChange = (e) => {
     const {name, value} = e.target;
