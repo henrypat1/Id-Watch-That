@@ -1,26 +1,26 @@
 import api from './api-config';
 
-export const getAllFoods = async () => {
-  const resp = await api.get('/foods');
+export const getAllMovies = async () => {
+  const resp = await api.get('/movies');
   return resp.data;
 };
 
-export const getOneFood = async (id) => {
-  const resp = await api.get(`/foods/${id}`);
+export const getOneMovie = async (id) => {
+  const resp = await api.get(`/movies/${id}`);
   return resp.data;
 };
 
-export const postFood = async (foodData) => {
-  const resp = await api.post('/foods', { food: foodData });
+export const postFood = async (movieData) => {
+  const resp = await api.post('/movies', { movie: movieData });
   return resp.data;
 };
 
-export const putFood = async (id, foodData) => {
-  const resp = await api.put(`/foods/${id}`, { food: foodData });
+export const putFood = async (id, movieData) => {
+  const resp = await api.put(`/movies/${id}`, { movie: movieData });
   return resp.data;
 };
 
-export const deleteFood = async (id) => {
-  const resp = await api.delete(`/foods/${id}`);
+export const deleteMovie = async (id) => {
+  const resp = await api.delete(`/movies/${id}`);
   return resp;
 };

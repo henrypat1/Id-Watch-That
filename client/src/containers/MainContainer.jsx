@@ -55,17 +55,17 @@ export default function MainContainer(props) {
   return (
     <div>
       <Switch>
-        <Route path='/flavors'>
+        <Route path='/movies'>
           <Flavors flavors={flavors} />
         </Route>
-        <Route path='/foods/:id/edit'>
-          <FoodEdit foods={foods} handleUpdate={handleUpdate} />
+        <Route path='/movies/:id/edit'>
+          <MovieEdit foods={foods} handleUpdate={handleUpdate} />
         </Route>
-        <Route path='/foods/new'>
-          <FoodCreate handleCreate={handleCreate} />
+        <Route path='/movies/new'>
+          <MovieCreate handleCreate={handleCreate} />
         </Route>
-        <Route path='/foods/:id'>
-          <FoodDetail flavors={flavors} />
+        <Route path='/movies/:id'>
+          <MovieDetail reviews={reviews} />
         </Route>
         <Route path='/foods'>
           <Foods
