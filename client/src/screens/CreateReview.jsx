@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { addReviewToMovie } from '../services/review';
+// import { addReviewToMovie } from '../services/review';
 
 export default function CreateReview(props) {
   const [formData, setFormData] = useState({
-    name: '',
+    header: '',
+    review: '',
   });
-  const { header } = formData;
-  const { review } = formData;
-  const { handleCreate } = props;
+  const { header, review, } = formData;
+  const { id, handleCreateReview } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,17 +21,17 @@ export default function CreateReview(props) {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleCreate(formData);
+        handleCreateReview(id, formData);
       }}
     >
       <h3>Add Review</h3>
       <label>
         Header:
-        <input type='text' name='header' value={header} onChange={handleChange} />
+        <input name='header' value={header} onChange={handleChange} />
       </label>
       <label>
         Review:
-        <input type='text' name='review' value={review} onChange={handleChange} />
+        <input name='review' value={review} onChange={handleChange} />
       </label>
       <button>Submit</button>
     </form>

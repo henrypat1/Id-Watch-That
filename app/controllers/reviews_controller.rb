@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :update, :destroy]
-
+  # before_action :authorize_request, only: [:index, :create]
   # GET /reviews
   def index
     @reviews = Review.all
@@ -15,13 +15,18 @@ class ReviewsController < ApplicationController
 
   # POST /reviews
   def create
-    @review = Review.new(review_params)
+    @movie = Movie.find(params[:movie_id])
+    @review = Review.where(movie_id: @movie.id).new(review_params)
 
     if @review.save
       render json: @review, status: :created, location: @review
     else
       render json: @review.errors, status: :unprocessable_entity
     end
+  end
+
+  def review_params
+    params.require(:review).permit(:review, :user_id, :movie_id)
   end
 
 end

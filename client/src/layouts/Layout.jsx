@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Layout.css';
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
@@ -6,7 +7,7 @@ export default function Layout(props) {
     <header>
       <h1>I'd Watch That</h1>
       {currentUser ? (
-        <div>
+        <div className= "user">
           <p>{currentUser.username}</p>
           <button onClick={handleLogout}>Logout</button>
         </div>

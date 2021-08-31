@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 
 import { getAllMovies, postMovie, putMovie, deleteMovie } from '../services/movie';
-import { getAllReviews } from '../services/review';
+import { getAllReviews, addReviewToMovie } from '../services/review';
 import Movie from '../screens/Movie';
 import AddMovie from '../screens/AddMovie';
 import UpdateMovie from '../screens/UpdateMovie';
@@ -36,6 +36,12 @@ export default function MainContainer(props) {
     setMovies((prevState) => [...prevState, movieData]);
     history.push('/movie');
   };
+  
+  const handleCreateReview = async (id, contentData) => {
+    const oneReview = await addReviewToMovie(id, contentData);
+    setReviews((prevState) => [...prevState, oneReview])
+    history.push('/movies/:id')
+  }
 
   const handleUpdate = async (id, formData) => {
     const movieData = await putMovie(id, formData);
@@ -44,12 +50,13 @@ export default function MainContainer(props) {
         return movies.id === Number(id) ? movieData : movies;
       })
     );
-    history.push('/movie');
+    history.push('/movie/id');
   };
 
   const handleDelete = async (id) => {
     await deleteMovie(id);
     setMovies((prevState) => prevState.filter((movies) => movies.id !== id));
+    history.push('/movie')
   };
 
   return (
@@ -63,7 +70,7 @@ export default function MainContainer(props) {
           <AddMovie handleCreate={handleCreate} />
         </Route>
         <Route path='/movies/:id'>
-          <MovieDetail reviews={reviews} currentUser={currentUser} handleDelete={handleDelete} handleUpdate={handleUpdate}/>
+          <MovieDetail reviews={reviews} currentUser={currentUser} handleDelete={handleDelete} handleUpdate={handleUpdate} />
         </Route>
         <Route path='/movies'>
           <Movie
@@ -72,8 +79,8 @@ export default function MainContainer(props) {
             currentUser={currentUser}
           />
         </Route>
-        <Route path='reviews'>
-          <CreateReview reviews={reviews} movies={movie}/>
+        <Route exact path='/reviews'>
+          <CreateReview reviews={reviews} handleCreateReview={handleCreateReview}/>
         </Route>
       </Switch>
     </div>

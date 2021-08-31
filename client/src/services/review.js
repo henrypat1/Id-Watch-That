@@ -5,7 +5,7 @@ export const getAllReviews = async () => {
   return resp.data;
 }
 
-export const addReviewToMovie = async (movieId, reviewId) => {
-  const resp = await api.get(`/foods/${movieId}/reviews/${reviewId}`);
+export const addReviewToMovie = async (id, reviewData) => {
+  const resp = await api.get(`/movies/${id}/reviews`, {review: reviewData});
   return resp.data;
 }

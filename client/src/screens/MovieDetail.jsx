@@ -10,7 +10,7 @@ export default function FoodDetail(props) {
   const [selectedMovie, setSelectedMovie] = useState('');
   const { id } = useParams();
   const { review, handleDelete, currentUser } = props;
-  console.log(movie?.reviews[0].header)
+  console.log(movie?.reviews[0]?.header)
   
   
 
@@ -41,7 +41,7 @@ export default function FoodDetail(props) {
       <img src={movie?.poster_img}/>
       <p>{movie?.plot}</p>
       <div>
-        {movie?.reviews.map((review) => {return(<div><p>{review?.review}</p> <p>{review?.header}</p></div>) })}
+        {movie?.reviews.map((review) => {return(<div><p>{review?.header}</p> <p>{review?.review}</p></div>) })}
       
       </div>
 
@@ -56,7 +56,7 @@ export default function FoodDetail(props) {
       {console.log(currentUser?.id)}
   
       <Link to = '/reviews'>
-      <button>AddReview</button>
+      <button>Add Review</button>
       </Link>
       
     </div>
