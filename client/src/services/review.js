@@ -1,4 +1,4 @@
-import api from './api-config';
+import api from './apiConfig';
 
 export const getAllReviews = async () => {
   const resp = await api.get('/reviews');

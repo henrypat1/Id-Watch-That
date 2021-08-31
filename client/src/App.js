@@ -8,10 +8,11 @@ import './App.css';
 import {
   signInUser,
   signUpUser,
-  verifyUser
+  verifyUser,
+  removeToken,
+
 } from './services/auth';
 
-import './App.css';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -25,32 +26,39 @@ function App() {
     handleVerify();
   }, []);
 
-  const handleSignIn = async (signInData) => {
-    const userData = await signInUser(signInData);
+  const handleSignIn = async (formData) => {
+    const userData = await signInUser(formData);
     setCurrentUser(userData);
     history.push('/');
   };
 
-  const handleSignUp = async (registerData) => {
-    const userData = await signUpUser(registerData);
+  const handleSignUp = async (formData) => {
+    const userData = await signUpUser(formData);
     setCurrentUser(userData);
     history.push('/');
   };
+
+  const handleLogout = () => {
+    setCurrentUser(null)
+    localStorage.removeItem("authToken")
+    removeToken()
+    history.push('/');
+  }
   
   return (
     <div className="App">
-      <Layout currentUser={currentUser}>
-        {/* <Switch> */}
+      <Layout currentUser={currentUser} handleLogout= {handleLogout}>
+        <Switch>
           <Route path='/SignIn'>
             <SignIn handleSignIn={handleSignIn} />
           </Route>
           <Route path='/SignUp'>
-            <SignUp handleRegister={handleSignUp} />
+            <SignUp handleSignUp={handleSignUp} />
           </Route>
           <Route path='/'>
             <MainContainer currentUser={currentUser} />
           </Route>
-        {/* </Switch> */}
+        </Switch>
       </Layout>
     </div>
   );

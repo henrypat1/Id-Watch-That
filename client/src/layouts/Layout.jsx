@@ -4,14 +4,14 @@ export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
     <header>
-      <h1>Tasteville</h1>
+      <h1>I'd Watch That</h1>
       {currentUser ? (
         <div>
           <p>{currentUser.username}</p>
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
-        <Link to='/signin'>Login/Register</Link>
+        <Link to='/signin'>SignIn/SignUp</Link>
       )}
       <hr />
       {currentUser && (

@@ -6,7 +6,8 @@ export default function SignUp(props) {
     email: '',
     password: '',
   });
-  const { handleRegister } = props;
+  const { handleSignUp } = props;
+  const { username, email, password } = formData;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,16 +21,16 @@ export default function SignUp(props) {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleRegister(formData);
+        handleSignUp(formData);
       }}
     >
-      <h3>Register</h3>
+      <h3>SignUp</h3>
       <label>
         Username:
         <input
           type='text'
           name='username'
-          value={formData.username}
+          value={username}
           onChange={handleChange}
         />
       </label>
@@ -39,7 +40,7 @@ export default function SignUp(props) {
         <input
           type='text'
           name='email'
-          value={formData.email}
+          value={email}
           onChange={handleChange}
         />
       </label>
@@ -49,7 +50,7 @@ export default function SignUp(props) {
         <input
           type='password'
           name='password'
-          value={formData.password}
+          value={password}
           onChange={handleChange}
         />
       </label>
