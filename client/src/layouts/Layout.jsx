@@ -16,7 +16,8 @@ export default function Layout(props) {
       <hr />
       {currentUser && (
         <div>
-          <Link to='/moives'>Movies</Link>
+          <Link to='/movies'>Movies</Link>
+          <Link to= '/updatemovie'>UpdateMovie</Link>
         </div>
       )}
       {props.children}

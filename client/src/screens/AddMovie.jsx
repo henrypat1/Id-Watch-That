@@ -4,10 +4,10 @@ export default function AddMovie(props) {
   const [formData, setFormData] = useState({
     name: '',
   });
-  const { name } = formData;
+  const { title } = formData;
   const { year } = formData;
   const { director } = formData;
-  const { poster } = formData;
+  const { poster_img } = formData;
   const { plot } = formData;
   const { handleCreate } = props;
 
@@ -28,17 +28,23 @@ export default function AddMovie(props) {
     >
       <h3>Add Movie</h3>
       <label>
-        Name:
-        <input type='text' name='name' value={name} onChange={handleChange} />
+        Title:
+        <input type='text' name='title' value={title} onChange={handleChange} />
       </label>
       <label>
+        Year:
         <input type="text" name='year' value={year} onchange={handleChange} />
       </label>
       <label>
+        Director:
         <input type="text" name='director' value={director} onchange={handleChange} />
-      </label><label>
-        <input type="img-url" name='poster' value={poster} onchange={handleChange} />
-      </label><label>
+      </label>
+      <label>
+        Poster:
+        <input type="img-url" name='poster' value={poster_img} onchange={handleChange} />
+      </label>
+      <label>
+        Plot:
         <input type="text" name='plot' value={plot} onchange={handleChange} />
       </label>
       <button>Submit</button>

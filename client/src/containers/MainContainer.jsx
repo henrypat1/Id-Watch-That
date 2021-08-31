@@ -33,7 +33,7 @@ export default function MainContainer(props) {
   const handleCreate = async (formData) => {
     const movieData = await postMovie(formData);
     setMovies((prevState) => [...prevState, movieData]);
-    history.push('/foods');
+    history.push('/movie');
   };
 
   const handleUpdate = async (id, formData) => {
@@ -54,9 +54,7 @@ export default function MainContainer(props) {
   return (
     <div>
       <Switch>
-        <Route path='/movies'>
-          
-        </Route>
+      
         <Route path='/movies/:id/edit'>
           <UpdateMovie movies={movie} handleUpdate={handleUpdate} />
         </Route>

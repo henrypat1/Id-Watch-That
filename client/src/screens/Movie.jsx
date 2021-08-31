@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 
 export default function Movies(props) {
-  const { movie, handleDelete, currentUser } = props;
+  const { movies, handleDelete, currentUser } = props;
 
   return (
     <div>
       <h3>Movies</h3>
-      {movie.map((movie) => (
+      {movies.map((movie) => (
         <div key={movie.id}>
           <Link to={`/movies/${movie.id}`}>
-            <p>{movie.name}</p>
+            <p>{movie.title}</p>
           </Link>
           {currentUser?.id === movie.user_id && (
             <div>
@@ -21,8 +21,8 @@ export default function Movies(props) {
           )}
         </div>
       ))}
-      <Link to='/movies/new'>
-        <button>Create</button>
+      <Link to='/addmovie'>
+        <button>Add Movie</button>
       </Link>
     </div>
   );
