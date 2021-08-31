@@ -1,4 +1,4 @@
-import api from './apiConfig';
+import api from './api-config';
 
 export const getAllMovies = async () => {
   const resp = await api.get('/movies');

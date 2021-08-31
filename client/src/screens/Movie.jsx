@@ -21,7 +21,7 @@ export default function Movies(props) {
           )}
         </div>
       ))}
-      <Link to='/addmovie'>
+      <Link to='/movies/new'>
         <button>Add Movie</button>
       </Link>
     </div>

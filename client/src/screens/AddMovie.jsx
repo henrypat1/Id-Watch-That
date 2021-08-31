@@ -1,14 +1,16 @@
 import { useState } from 'react';
+import { postMovie } from '../services/movie';
 
 export default function AddMovie(props) {
   const [formData, setFormData] = useState({
-    name: '',
+    title: '',
+    year: '',
+    director: '',
+    poster_img: '',
+    plot: ''
   });
-  const { title } = formData;
-  const { year } = formData;
-  const { director } = formData;
-  const { poster_img } = formData;
-  const { plot } = formData;
+  const { title, year, director, poster_img, plot } = formData;
+  
   const { handleCreate } = props;
 
   const handleChange = (e) => {
@@ -19,13 +21,14 @@ export default function AddMovie(props) {
     }));
   };
 
-  return (
+  return ( 
     <form
       onSubmit={(e) => {
         e.preventDefault();
         handleCreate(formData);
       }}
     >
+      
       <h3>Add Movie</h3>
       <label>
         Title:
@@ -33,19 +36,19 @@ export default function AddMovie(props) {
       </label>
       <label>
         Year:
-        <input type="text" name='year' value={year} onchange={handleChange} />
+        <input type="text" name='year' value={year} onChange={handleChange} />
       </label>
       <label>
         Director:
-        <input type="text" name='director' value={director} onchange={handleChange} />
+        <input type="text" name='director' value={director} onChange={handleChange} />
       </label>
       <label>
         Poster:
-        <input type="img-url" name='poster' value={poster_img} onchange={handleChange} />
+        <input type="text" name='poster_img' value={poster_img} onChange={handleChange} />
       </label>
       <label>
         Plot:
-        <input type="text" name='plot' value={plot} onchange={handleChange} />
+        <input type="text" name='plot' value={plot} onChange={handleChange} />
       </label>
       <button>Submit</button>
     </form>

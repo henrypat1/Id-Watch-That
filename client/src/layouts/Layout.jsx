@@ -17,6 +17,7 @@ export default function Layout(props) {
       {currentUser && (
         <div>
           <Link to='/movies'>Movies</Link>
+          
           <Link to= '/updatemovie'>UpdateMovie</Link>
         </div>
       )}
