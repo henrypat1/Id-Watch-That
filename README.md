@@ -146,7 +146,19 @@ src
 ## Code Showcase
 
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+``` 
+ {currentUser?.id === movie?.user_id && (
+            <div >
+              <Link to={`/movies/${movie?.id}/edit`}>
+                <button className="update-btn">Edit</button>
+              </Link>
+              <button className="delete-btn"onClick={() => handleDelete(movie?.id)}>Delete</button>
+            </div>
+      )}
+      {console.log(currentUser?.id)}
+```
+
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+Had trouble grabbing the user data fo login and adding reviews. 
