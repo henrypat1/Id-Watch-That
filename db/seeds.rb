@@ -10,7 +10,7 @@ Movie.destroy_all
 User.destroy_all
 
 
-@user = User.create!(username: 'henry', email: 'henry@email.com', password_digest: '123456')
+@user = User.create!(username: 'henry', email: 'henry@email.com', password: '123456')
 
 puts "#{User.count} users created"
 
