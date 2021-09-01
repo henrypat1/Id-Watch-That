@@ -9,7 +9,7 @@ export default function UpdateMovie(props) {
     poster_img: '',
     plot: ''
   })
-  const { title, year, director, poster_img, plot } = formData;
+  // const { title, year, director, poster_img, plot } = formData;
   const {movies, handleUpdate} = props;
   const {id} = useParams();
 

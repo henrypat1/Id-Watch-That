@@ -1,12 +1,13 @@
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: aliceblue;
-  display: flex;
+  
 }
 
 header {
   background-color: navy;
   color: azure;
+  /* display: flex; */
 }
 
 h1{
@@ -16,6 +17,11 @@ h1{
 .user{
   color: aliceblue;
   background-color: navy;
+}
+
+Link{
+  color: aliceblue;
+  background-color: black;
 }
 
 /* @media screen and (max-width: 765px){

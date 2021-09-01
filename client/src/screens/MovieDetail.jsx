@@ -5,15 +5,15 @@ import { getOneMovie } from '../services/movie';
 import CreateReview from './CreateReview';
 import './MovieDetail.css'
 
-export default function FoodDetail(props) {
+export default function MovieDetail(props) {
   const [movie, setMovie] = useState(null);
-  const [selectedMovie, setSelectedMovie] = useState('');
+  // const [selectedMovie, setSelectedMovie] = useState('');
   const { id } = useParams();
   const { reviews, handleDelete, currentUser, movieId, handleCreateReview } = props;
-  console.log(movie?.reviews[0]?.header)
-  console.log('props', props)
+  // console.log(movie?.reviews[0]?.header)
+  // console.log('props', props)
   
-  console.log('movie', movieId)
+  // console.log('movie', movieId)
 
   useEffect(() => {
     const fetchMovieItem = async () => {
@@ -23,15 +23,15 @@ export default function FoodDetail(props) {
     fetchMovieItem();
   }, [id, reviews]);
 
-  const handleChange = (e) => {
-    const { value } = e.target;
-    setSelectedMovie(value);
-  };
+  // const handleChange = (e) => {
+  //   const { value } = e.target;
+  //   setSelectedMovie(value);
+  // };
 
-  // Our handle submit for adding the flavor to our food
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    };
+  // // Our handle submit for adding the flavor to our food
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   };
 
   return (
     
