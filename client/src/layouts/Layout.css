@@ -1,13 +1,26 @@
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: aliceblue;
+  display: flex;
+}
+
 header {
   background-color: navy;
   color: azure;
 }
 
 h1{
-  color: blue;
+  color: rgb(193, 193, 235);
 }
 
 .user{
   color: aliceblue;
   background-color: navy;
+}
+
+@media screen and (max-width: 600px){
+  .user{
+    color: aliceblue;
+    background-color: black;
+  }
 }

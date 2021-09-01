@@ -7,8 +7,8 @@ export default function CreateReview(props) {
     review: '',
   });
   const { header, review, } = formData;
-  const { id, handleCreateReview } = props;
-
+  const { handleCreateReview, movie } = props;
+  console.log('movieId', movie)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -21,7 +21,7 @@ export default function CreateReview(props) {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleCreateReview(id, formData);
+        handleCreateReview(movie.id, formData);
       }}
     >
       <h3>Add Review</h3>

@@ -6,6 +6,6 @@ export const getAllReviews = async () => {
 }
 
 export const addReviewToMovie = async (id, reviewData) => {
-  const resp = await api.get(`/movies/${id}/reviews`, {review: reviewData});
+  const resp = await api.post(`/movies/${id}/reviews`, {review: reviewData});
   return resp.data;
 }

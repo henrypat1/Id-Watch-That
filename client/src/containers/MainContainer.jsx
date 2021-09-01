@@ -7,7 +7,7 @@ import Movie from '../screens/Movie';
 import AddMovie from '../screens/AddMovie';
 import UpdateMovie from '../screens/UpdateMovie';
 import MovieDetail from '../screens/MovieDetail';
-import CreateReview from '../screens/CreateReview';
+// import CreateReview from '../screens/CreateReview';
 
 export default function MainContainer(props) {
   const [movie, setMovies] = useState([]);
@@ -70,7 +70,7 @@ export default function MainContainer(props) {
           <AddMovie handleCreate={handleCreate} />
         </Route>
         <Route path='/movies/:id'>
-          <MovieDetail reviews={reviews} currentUser={currentUser} handleDelete={handleDelete} handleUpdate={handleUpdate} />
+          <MovieDetail reviews={reviews} handleCreateReview={handleCreateReview} currentUser={currentUser} handleDelete={handleDelete} handleUpdate={handleUpdate} />
         </Route>
         <Route path='/movies'>
           <Movie
@@ -80,7 +80,7 @@ export default function MainContainer(props) {
           />
         </Route>
         <Route exact path='/reviews'>
-          <CreateReview reviews={reviews} handleCreateReview={handleCreateReview}/>
+          
         </Route>
       </Switch>
     </div>

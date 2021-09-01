@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :set_review, only: [:show, :update, :destroy]
+  before_action :set_review, only: [:show, :update, :destroy, :create]
   # before_action :authorize_request, only: [:index, :create]
   # GET /reviews
   def index
@@ -15,6 +15,8 @@ class ReviewsController < ApplicationController
 
   # POST /reviews
   def create
+    # @review = Review.build(review_params)
+    @review.user_id = params[:user_id]
     @movie = Movie.find(params[:movie_id])
     @review = Review.where(movie_id: @movie.id).new(review_params)
 

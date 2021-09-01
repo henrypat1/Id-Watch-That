@@ -4,15 +4,17 @@ import { useParams } from 'react-router-dom';
 import { getOneMovie } from '../services/movie';
 import { getAllReviews } from '../services/review';
 import CreateReview from './CreateReview';
+import './MovieDetail.css'
 
 export default function FoodDetail(props) {
   const [movie, setMovie] = useState(null);
   const [selectedMovie, setSelectedMovie] = useState('');
   const { id } = useParams();
-  const { review, handleDelete, currentUser } = props;
+  const { review, handleDelete, currentUser, movieId, handleCreateReview } = props;
   console.log(movie?.reviews[0]?.header)
+  console.log('props', props)
   
-  
+  console.log('movie', movieId)
 
   useEffect(() => {
     const fetchMovieItem = async () => {
@@ -34,19 +36,19 @@ export default function FoodDetail(props) {
 
   return (
     
-    <div>
+    <div className='movies'>
       <h3>{movie?.title}</h3>
       <h3>{movie?.year}</h3>
       <h3>{movie?.director}</h3>
       <img src={movie?.poster_img}/>
       <p>{movie?.plot}</p>
-      <div>
-        {movie?.reviews.map((review) => {return(<div><p>{review?.header}</p> <p>{review?.review}</p></div>) })}
+      <div className='reviews'>
+        {movie?.reviews.map((review) => {return(<div><h3>{review?.header}</h3> <p>{review?.review}</p></div>) })}
       
       </div>
 
       {currentUser?.id === movie?.user_id && (
-            <div>
+            <div >
               <Link to={`/movies/${movie?.id}/edit`}>
                 <button className="update-btn">Edit</button>
               </Link>
@@ -55,9 +57,9 @@ export default function FoodDetail(props) {
       )}
       {console.log(currentUser?.id)}
   
-      <Link to = '/reviews'>
-      <button>Add Review</button>
-      </Link>
+  
+      <CreateReview movie={movie} handleCreateReview={handleCreateReview}/>
+      
       
     </div>
     

@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :update, :destroy]
-  before_action :authorize_request, except: [:index, :show]
+  before_action :authorize_request, except: [:index, :show, :create]
 
   # GET /movies
   def index

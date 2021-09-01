@@ -19,7 +19,7 @@ export default function Layout(props) {
         <div>
           <Link to='/movies'>Movies</Link>
           
-          <Link to= '/updatemovie'>UpdateMovie</Link>
+          {/* <Link to= '/updatemovie'>UpdateMovie</Link> */}
         </div>
       )}
       {props.children}
