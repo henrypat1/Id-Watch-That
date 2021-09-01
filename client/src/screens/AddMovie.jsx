@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { postMovie } from '../services/movie';
+import './AddMovie.css'
 
 export default function AddMovie(props) {
   const [formData, setFormData] = useState({
@@ -28,7 +28,7 @@ export default function AddMovie(props) {
         handleCreate(formData);
       }}
     >
-      
+      <div className='Addmovie'>
       <h3>Add Movie</h3>
       <label>
         Title:
@@ -51,6 +51,8 @@ export default function AddMovie(props) {
         <input type="text" name='plot' value={plot} onChange={handleChange} />
       </label>
       <button>Submit</button>
+      </div>
+    
     </form>
   );
 }

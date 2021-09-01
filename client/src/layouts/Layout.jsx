@@ -15,13 +15,9 @@ export default function Layout(props) {
         <Link to='/signin'>SignIn/SignUp</Link>
       )}
       <hr />
-      {currentUser && (
-        <div>
-          <Link to='/movies'>Movies</Link>
-          
-          {/* <Link to= '/updatemovie'>UpdateMovie</Link> */}
-        </div>
-      )}
+      <Link to='/movies'>Movies</Link>
+    
+    
       {props.children}
     </header>
   );

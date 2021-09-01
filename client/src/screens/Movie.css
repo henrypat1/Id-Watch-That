@@ -1,0 +1,24 @@
+h3 {
+  color: black;
+}
+
+.titles{
+  
+  background-color: black;
+}
+
+@media screen and (max-width: 768px){
+  h3 {
+    color: azure;
+  }
+  
+  .titles{
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .titles{
+    background-color: navy;
+  }
+}

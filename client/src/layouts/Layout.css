@@ -1,4 +1,4 @@
-/* h1 {
+h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: aliceblue;
   display: flex;
@@ -18,7 +18,7 @@ h1{
   background-color: navy;
 }
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 765px){
   .user{
     color: aliceblue;
     background-color: black;

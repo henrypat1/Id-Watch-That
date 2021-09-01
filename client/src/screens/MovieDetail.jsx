@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneMovie } from '../services/movie';
-import { getAllReviews } from '../services/review';
 import CreateReview from './CreateReview';
 import './MovieDetail.css'
 
