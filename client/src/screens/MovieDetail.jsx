@@ -9,7 +9,7 @@ export default function MovieDetail(props) {
   const [movie, setMovie] = useState(null);
   // const [selectedMovie, setSelectedMovie] = useState('');
   const { id } = useParams();
-  const { reviews, handleDelete, currentUser, movieId, handleCreateReview } = props;
+  const { reviews, handleDelete, currentUser, handleCreateReview } = props;
   // console.log(movie?.reviews[0]?.header)
   // console.log('props', props)
   
@@ -39,7 +39,7 @@ export default function MovieDetail(props) {
       <h3>{movie?.title}</h3>
       <h3>{movie?.year}</h3>
       <h3>{movie?.director}</h3>
-      <img src={movie?.poster_img}/>
+      <img src={movie?.poster_img} alt='poster'/>
       <p>{movie?.plot}</p>
       <div className='reviews'>
         {movie?.reviews.map((review) => {return(<div><h3>{review?.header}</h3> <p>{review?.review}</p></div>) })}
