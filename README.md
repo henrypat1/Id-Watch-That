@@ -1,6 +1,8 @@
 # I'd Watch That
 # PROJECT 4 README <!-- omit in toc -->
 
+https://612f8dd919c0850007746bc8--angry-visvesvaraya-f5b564.netlify.app/
+
 > The Project Planning section **should be completed** for your project pitch with instructors.
 
 
@@ -24,6 +26,8 @@
 ## Overview
 
 _**I'd Watch that** an app that will allow people to read and right there own reviews of movies._
+
+
 
 
 <br>
@@ -104,17 +108,17 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| DB                  |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     4 hrs      |     1 hrs     |     TBD     |
-| connect front end   |    H     |     4 hrs      |     3 hrs     |     TBD     |
-| testing             |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
-| create Pages        |    H     |     6 hrs      |     1 hrs     |     TBD     |
-| conecting pages     |    H     |     4 hrs      |     3 hrs     |     TBD     |
-| auth                |    H     |     4 hrs      |     3 hrs     |     TBD     |
-| Debugging           |    H     |     4 hrs      |     1 hrs     |     TBD     |
-| CSS Styling         |    L     |     6 hrs      |     3 hrs     |     TBD     |
-| Deployment          |    H     |     3 hrs      |     3 hrs     |     TBD     |
-| TOTAL               |          |     36 hrs     |               |             |
+| DB                  |    H     |     4 hrs      |     4 hrs     |    4 hrs    |
+| Create CRUD Actions |    H     |     4 hrs      |     3 hrs     |    3 hrs    |
+| connect front end   |    H     |     4 hrs      |     3 hrs     |    3 hrs    |
+| testing             |    H     |     4 hrs      |     4 hrs     |    4 hrs    |
+| create Pages        |    H     |     6 hrs      |     8 hrs     |    8 hrs    |
+| conecting pages     |    H     |     4 hrs      |     6 hrs     |    6 hrs    |
+| auth                |    H     |     4 hrs      |     3 hrs     |    3 hrs    |
+| Debugging           |    H     |     4 hrs      |     4 hrs     |    4 hrs    |
+| CSS Styling         |    L     |     6 hrs      |     4 hrs     |    4 hrs    |
+| Deployment          |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| TOTAL               |          |     36 hrs     |               |    42 hrs   |
 
 
 
