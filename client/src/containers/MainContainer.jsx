@@ -40,7 +40,7 @@ export default function MainContainer(props) {
   const handleCreateReview = async (id, contentData) => {
     const oneReview = await addReviewToMovie(id, contentData);
     setReviews((prevState) => [...prevState, oneReview])
-    history.push('/movies/:id')
+    history.push(`/movies/${id}`)
   }
 
   const handleUpdate = async (id, formData) => {

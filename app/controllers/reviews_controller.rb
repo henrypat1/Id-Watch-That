@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
-  before_action :set_review, only: [:show, :update, :destroy, :create]
-  # before_action :authorize_request, only: [:index, :create]
+  before_action :set_review, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create]
   # GET /reviews
   def index
     @reviews = Review.all
@@ -15,10 +15,10 @@ class ReviewsController < ApplicationController
 
   # POST /reviews
   def create
-    # @review = Review.build(review_params)
-    @review.user_id = params[:user_id]
+    @review = Review.new(review_params)
+    @review.user = @current_user
     @movie = Movie.find(params[:movie_id])
-    @review = Review.where(movie_id: @movie.id).new(review_params)
+    @review.movie = @movie
 
     if @review.save
       render json: @review, status: :created, location: @review
@@ -27,8 +27,14 @@ class ReviewsController < ApplicationController
     end
   end
 
+
+  private
+
+  def set_review
+    @review = Review.find(params[:id])
+  end
   def review_params
-    params.require(:review).permit(:review, :user_id, :movie_id)
+    params.require(:review).permit(:review, :user_id, :header, :movie_id)
   end
 
 end

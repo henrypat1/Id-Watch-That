@@ -1,4 +1,4 @@
-h3 {
+/* h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -32,10 +32,10 @@ p {
   color: aliceblue;
   background-color: black;
   box-shadow: 2px 2px 2px #7B818A;
-}
+} */
 
-@media screen and (max-width: 600px) {
-  h3{text-align: ;}
+/* @media screen and (max-width: 600px) {
+  h3{text-align: center;}
   p{
     text-align: center;
     color: aliceblue;
@@ -43,16 +43,12 @@ p {
 
   .movies{
     align-items: center;
-    width: 400px;
+    width: 300px;
     padding: 10px;
     margin: 20px auto;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 6px;
-    border: 1px solid #5B616A;
     color: aliceblue;
-    background-color: #275DAD;
-    box-shadow: 2px 2px 2px #7B818A;
+    background-color:black;
+    
     
   }
 
@@ -69,4 +65,4 @@ p {
     box-shadow: 2px 2px 2px #7B818A;
   }
   
-}
+} */

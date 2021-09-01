@@ -10,7 +10,7 @@ export default function FoodDetail(props) {
   const [movie, setMovie] = useState(null);
   const [selectedMovie, setSelectedMovie] = useState('');
   const { id } = useParams();
-  const { review, handleDelete, currentUser, movieId, handleCreateReview } = props;
+  const { reviews, handleDelete, currentUser, movieId, handleCreateReview } = props;
   console.log(movie?.reviews[0]?.header)
   console.log('props', props)
   
@@ -22,7 +22,7 @@ export default function FoodDetail(props) {
       setMovie(movieData);
     };
     fetchMovieItem();
-  }, [id]);
+  }, [id, reviews]);
 
   const handleChange = (e) => {
     const { value } = e.target;
